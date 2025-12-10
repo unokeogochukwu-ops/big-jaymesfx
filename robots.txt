@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bigjaymesfx.com/sitemap.xml

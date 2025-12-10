@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big James | Forex Trading Mastery</title>
+    <meta name="description"
+        content="Join Big James FX for institutional-grade forex mentorship, account management, and daily trading signals. Stop gambling, start dominating.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo-wrapper">
+            <a href="#" class="bj-logo-btn">BJ</a>
+            <div class="logo">BIG JAYMESFX</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#account-management">Account Management</a></li>
+            <li><a href="#mentorships">Mentorships</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="connect.html" class="btn btn-login">Log In</a>
+            <a href="connect.html" class="btn btn-register">Register</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#about-me">About Me</a>
+        <a href="#account-management">Account Management</a>
+        <a href="#mentorships">Mentorships</a>
+        <a href="#services">Services</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="connect.html" class="btn btn-login-mobile">Log In</a>
+        <a href="connect.html" class="btn btn-register-mobile">Register</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-anim">
+            <img src="assets/images/hero-bg.png" alt="Abstract Background" class="bg-image">
+            <div class="gradient-overlay"></div>
+            <canvas id="hero-canvas"></canvas>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-pill" data-aos="fade-right" data-aos-delay="100">
+                    <span class="dot"></span> Limitless Trading Potential
+                </div>
+                <h1 data-aos="fade-up" data-aos-delay="200">
+                    Stop Gambling. <br>
+                    <span class="highlight-text">Start Dominating.</span>
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="300">
+                    Join the elite circle of traders who don't just participate in the market—they command it.
+                    Data-driven mentorship & institutional-grade management.
+                </p>
+
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#mentorships" class="btn btn-primary-beam">
+                        <span class="btn-text">Start Your Legacy</span>
+                        <div class="beam-border"></div>
+                    </a>
+                    <a href="connect.html" class="btn btn-secondary-glass">
+                        <span class="icon"><iconify-icon icon="solar:chart-2-bold-duotone"></iconify-icon></span>
+                        Explore Management
+                    </a>
+                </div>
+
+                <!-- Social Proof Marquee -->
+                <div class="social-proof-container" data-aos="fade-up" data-aos-delay="500">
+                    <p class="proof-label">Trusted by 1000+ Traders</p>
+                    <div class="marquee-wrapper">
+                        <div class="marquee-content">
+                            <!-- Duplicated items for infinite loop -->
+                            <div class="proof-item"><iconify-icon icon="ph:star-fill"></iconify-icon> 4.9/5 Rating</div>
+                            <div class="proof-item"> <iconify-icon icon="solar:user-circle-bold"></iconify-icon> 2.5k
+                                Members</div>
+                            <div class="proof-item"><iconify-icon icon="solar:graph-up-bold"></iconify-icon> $10M+
+                                Managed</div>
+                            <div class="proof-item"><iconify-icon icon="ph:shield-check-fill"></iconify-icon> Verified
+                            </div>
+                            <!-- Repeat -->
+                            <div class="proof-item"><iconify-icon icon="ph:star-fill"></iconify-icon> 4.9/5 Rating</div>
+                            <div class="proof-item"> <iconify-icon icon="solar:user-circle-bold"></iconify-icon> 2.5k
+                                Members</div>
+                            <div class="proof-item"><iconify-icon icon="solar:graph-up-bold"></iconify-icon> $10M+
+                                Managed</div>
+                            <div class="proof-item"><iconify-icon icon="ph:shield-check-fill"></iconify-icon> Verified
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Visuals -->
+            <div class="hero-visual" data-aos="zoom-in" data-aos-delay="300">
+                <div class="hero-card-container">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section (Overhaul) -->
+    <section id="about-me" class="section about-section">
+        <div class="container grid-2-col">
+            <div class="about-image" data-aos="fade-right">
+                <img src="jay.jpeg" alt="Big James" class="profile-img">
+                <div class="floating-card glass-panel" data-aos="fade-up" data-aos-delay="400">
+                    <iconify-icon icon="solar:chart-2-bold"
+                        style="color: var(--accent); font-size: 2rem;"></iconify-icon>
+                    <div>
+                        <strong>92% Win Rate</strong>
+                        <small>Last Quarter</small>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <h2>I Don't Teach. <br><span class="highlight-text">I Create Market Killers.</span></h2>
+                <p>Most mentors sell you a dream. I sell you a system. My name is Big James, and I've spent 5 years
+                    decoding the algorithm. I've turned complete novices into 6-figure funded traders.</p>
+                <p>If you're looking for hand-holding, go elsewhere. If you're looking for financial sovereignty, you're
+                    home.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>$5M+</h3>
+                        <p>Capital Managed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1.2k</h3>
+                        <p>Funded Students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account Management Section (Updated) -->
+    <section id="account-management" class="section">
+        <div class="container">
+            <h2 data-aos="fade-right">Institutional <span class="highlight-text">Management</span></h2>
+
+            <!-- Sub Menu Navigation -->
+            <div class="am-nav-container" data-aos="fade-up">
+                <div class="am-nav-wrapper">
+                    <button class="am-nav-item active" onclick="switchTab(0)">Home</button>
+                    <button class="am-nav-item" onclick="switchTab(1)">Plans</button>
+                    <button class="am-nav-item" onclick="switchTab(2)">Steps</button>
+                    <button class="am-nav-item" onclick="switchTab(3)">Terms</button>
+                    <div class="am-nav-indicator"></div>
+                </div>
+            </div>
+
+            <!-- Content Carousel -->
+            <div class="am-carousel-window" data-aos="fade-up" data-aos-delay="200">
+                <div class="am-carousel-track">
+
+                    <!-- Slide 1: Home -->
+                    <div class="am-slide">
+                        <div class="glass-panel am-content-card">
+                            <div class="slide-content-grid">
+                                <div class="text-content">
+                                    <h3>Let The Algorithms Work</h3>
+                                    <p>We don't trade with emotion. We trade with statistical probability. Our PAMM
+                                        system allows you to copy our exact institutional trades automatically.</p>
+                                    <div class="stats-row">
+                                        <div class="stat-box">
+                                            <span class="num">8-15%</span>
+                                            <span class="label">Monthly Target</span>
+                                        </div>
+                                        <div class="stat-box">
+                                            <span class="num">10%</span>
+                                            <span class="label">Max Drawdown</span>
+                                        </div>
+                                    </div>
+                                    <a href="connect.html" class="btn btn-primary-beam">
+                                        <span class="btn-text">Connect Capital</span>
+                                        <div class="beam-border"></div>
+                                    </a>
+                                </div>
+                                <div class="visual-content pulse-chart-mini">
+                                    <!-- Simple animated chart graphic -->
+                                    <svg viewBox="0 0 200 100" class="mini-chart">
+                                        <path d="M0,80 Q50,70 80,40 T150,30 T200,10" fill="none" stroke="var(--accent)"
+                                            stroke-width="2" class="chart-line-anim" />
+
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Plans -->
+                    <div class="am-slide">
+                        <div class="glass-panel am-content-card">
+                            <h3>Tailored Growth Models</h3>
+                            <div class="plans-grid-mini">
+                                <div class="plan-mini item-1">
+                                    <h4>Standard</h4>
+                                    <div class="split">50/50 Split</div>
+                                    <p class="range">$1,000 - $4,000</p>
+                                    <ul class="mini-features">
+                                        <li>Standard Support</li>
+                                        <li>Monthly Payouts</li>
+                                    </ul>
+                                </div>
+                                <div class="plan-mini item-2 highlight">
+                                    <div class="best-badge">Popular</div>
+                                    <h4>Premium</h4>
+                                    <div class="split">60/40 Split</div>
+                                    <p class="range">$5,000 - $10,999</p>
+                                    <ul class="mini-features">
+                                        <li>Priority Support</li>
+                                        <li>Bi-Weekly Payouts</li>
+                                    </ul>
+                                </div>
+                                <div class="plan-mini item-3">
+                                    <h4>Institutional</h4>
+                                    <div class="split">65/35 Split</div>
+                                    <p class="range">$15,000+</p>
+                                    <ul class="mini-features">
+                                        <li>Private Wealth Manager</li>
+                                        <li>Weekly Payouts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Steps -->
+                    <div class="am-slide">
+                        <div class="glass-panel am-content-card">
+                            <h3>Onboarding Protocol</h3>
+                            <div class="steps-mini-container">
+                                <div class="step-card">
+                                    <div class="step-icon">01</div>
+                                    <div class="step-text">
+                                        <h4>Create Account</h4>
+                                        <p>Open a valid Deriv account via our official link.</p>
+                                    </div>
+                                </div>
+                                <div class="arrow-connector">→</div>
+                                <div class="step-card">
+                                    <div class="step-icon">02</div>
+                                    <div class="step-text">
+                                        <h4>Fund Capital</h4>
+                                        <p>Deposit your trading capital into your account.</p>
+                                    </div>
+                                </div>
+                                <div class="arrow-connector">→</div>
+                                <div class="step-card">
+                                    <div class="step-icon">03</div>
+                                    <div class="step-text">
+                                        <h4>Connect PAMM</h4>
+                                        <p>Send log in details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Terms -->
+                    <div class="am-slide">
+                        <div class="glass-panel am-content-card">
+                            <h3>Transparent Operations</h3>
+                            <div class="terms-grid">
+                                <div class="term-item">
+                                    <iconify-icon icon="solar:shield-check-bold" class="term-icon"></iconify-icon>
+                                    <h4>High Watermark</h4>
+                                    <p>We only profit when you profit. No performance fee unless existing losses are
+                                        recovered.</p>
+                                </div>
+                                <div class="term-item">
+                                    <iconify-icon icon="solar:lock-unlocked-bold" class="term-icon"></iconify-icon>
+                                    <h4>No Lock-in</h4>
+                                    <p>Your capital remains yours. Withdraw your funds at any time without penalty.</p>
+                                </div>
+                                <div class="term-item">
+                                    <iconify-icon icon="solar:copyright-bold" class="term-icon"></iconify-icon>
+                                    <h4>Regulated Broker</h4>
+                                    <p>We operate exclusively on regulated broker environments for maximum security.</p>
+                                </div>
+                                <div class="term-item">
+                                    <iconify-icon icon="solar:calculator-bold" class="term-icon"></iconify-icon>
+                                    <h4>Auto-Distribution</h4>
+                                    <p>Profits are calculated and distributed automatically by the broker's system.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">Why <span class="highlight-text">Traders Choose Us</span></h2>
+            <div class="features-grid">
+                <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box"><iconify-icon icon="solar:shield-check-bold-duotone"></iconify-icon></div>
+                    <h3>Institutional Grade</h3>
+                    <p>Stop trading like a retailer. Learn how funds move money and ride their coattails.</p>
+                </div>
+                <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box"><iconify-icon icon="solar:chart-square-bold-duotone"></iconify-icon></div>
+                    <h3>Data-Driven Logic</h3>
+                    <p>No gut feelings. Every trade is backed by hard data, sentiment analysis, and order flow.</p>
+                </div>
+                <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box"><iconify-icon icon="solar:users-group-rounded-bold-duotone"></iconify-icon>
+                    </div>
+                    <h3>Elite Community</h3>
+                    <p>Surround yourself with winners. Our discordant is a shark tank of profitable traders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Plan (Vertical Timeline) -->
+    <section id="action-plan" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">Your Path to <span class="highlight-text">Dominance</span></h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <!-- Step 1 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content glass-panel">
+                        <h3>Foundation Phase</h3>
+                        <p>Deconstruct bad habits. Learn market structure and psychology.</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content glass-panel">
+                        <h3>Strategy Mastery</h3>
+                        <p>Implement the "Big James" liquidity sweep model. 80% Winrate setup.</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content glass-panel">
+                        <h3>Invest Capital</h3>
+                        <p>Apply strategy and scale up capital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Mentorship Overhaul -->
+    <section id="mentorships" class="section">
+        <div class="container">
+            <h2 data-aos="fade-up">Mentorship <span class="highlight-text">Overhaul</span></h2>
+            <div class="pricing-grid">
+                <!-- Card 1 -->
+                <div class="pricing-card glass-panel" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card-header">
+                        <h3>Signal</h3>
+                        <div class="price">$50<span>/mo</span></div>
+                    </div>
+                    <ul class="features-list">
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> High Setups </li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Strategy PDF</li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Weekly Outlooks</li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Good R:R signals</li>
+                    </ul>
+                    <button class="btn btn-outline full-width">Start Learning</button>
+                </div>
+                <!-- Card 2 (Highlighted) -->
+                <div class="pricing-card glass-panel popular" data-aos="flip-up" data-aos-delay="200">
+                    <div class="popular-badge">1 month</div>
+                    <div class="card-header">
+                        <h3>1 month</h3>
+                        <div class="price">$150<span>/mo</span></div>
+                    </div>
+                    <ul class="features-list">
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Everything in Blueprint</li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> <strong>Daily Live
+                                Trading</strong></li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> I Analyze Your Trades</li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Private Chat</li>
+                    </ul>
+                    <button class="btn btn-primary-beam full-width">Join Inner Circle</button>
+                </div>
+                <!-- Card 3 -->
+                <div class="pricing-card glass-panel" data-aos="flip-right" data-aos-delay="300">
+                    <div class="card-header">
+                        <h3>3 months mentorship</h3>
+                        <div class="price">400<span>/3mo</span></div>
+                    </div>
+                    <ul class="features-list">
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Everything in Blueprint</li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Live Trading Sessions</li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> Video Course Library</li>
+                        <li><iconify-icon icon="ph:check-circle-fill"></iconify-icon> 1-on-1 class</li>
+                    </ul>
+                    <button class="btn btn-outline full-width">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Marquee -->
+    <section class="section testimonial-section">
+        <h2 class="text-center" data-aos="fade-down">Wins only. <span class="highlight-text">No Excuses.</span></h2>
+        <div class="marquee-wrapper reverse">
+            <div class="marquee-content">
+                <div class="testimonial-card glass-panel">"Funded $100k in 30 days. Big James is the truth."
+                    <br><strong>- Sarah J.</strong>
+                </div>
+                <div class="testimonial-card glass-panel">"The liquidity concept changed my life. Finally profitable."
+                    <br><strong>- Mike T.</strong>
+                </div>
+                <div class="testimonial-card glass-panel">"Best investment I ever made. The community is gold."
+                    <br><strong>- David R.</strong>
+                </div>
+                <div class="testimonial-card glass-panel">"Consistent payouts for 6 months straight." <br><strong>- Alex
+                        K.</strong></div>
+                <!-- Duplicate -->
+                <div class="testimonial-card glass-panel">"Funded $100k in 30 days. Big James is the truth."
+                    <br><strong>- Sarah J.</strong>
+                </div>
+                <div class="testimonial-card glass-panel">"The liquidity concept changed my life. Finally profitable."
+                    <br><strong>- Mike T.</strong>
+                </div>
+                <div class="testimonial-card glass-panel">"Best investment I ever made. The community is gold."
+                    <br><strong>- David R.</strong>
+                </div>
+                <div class="testimonial-card glass-panel">"Consistent payouts for 6 months straight." <br><strong>- Alex
+                        K.</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 data-aos="fade-left">Our Services</h2>
+            <div class="services-list">
+                <div class="service-item" data-aos="fade-right">
+                    <div class="icon"><iconify-icon icon="solar:bell-bing-bold-duotone"></iconify-icon></div>
+                    <div class="text">
+                        <h3>Daily Signals</h3>
+                        <p>High-probability setups sent directly to your phone.</p>
+                    </div>
+                </div>
+                <div class="service-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="icon"><iconify-icon icon="solar:square-academic-cap-bold-duotone"></iconify-icon></div>
+                    <div class="text">
+                        <h3>Mentorships</h3>
+                        <p>Weekly live trading sessions and Q&A.</p>
+                    </div>
+                </div>
+                <div class="service-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="icon"><iconify-icon icon="solar:chart-2-bold-duotone"></iconify-icon></div>
+                    <div class="text">
+                        <h3>Account Management</h3>
+                        <p>Deep dive breakdowns of major pairs every Sunday.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item" data-aos="fade-up">
+                    <button class="accordion-header">What broker do you use?</button>
+                    <div class="accordion-content">
+                        <p>We recommend Deriv for its reliability and competitive spreads. You can sign up using the
+                            Register button above.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="accordion-header">Do I need prior experience?</button>
+                    <div class="accordion-content">
+                        <p>No, our Beginner Course is designed to take you from zero to hero. We guide you every step of
+                            the way.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="accordion-header">How does account management work?</button>
+                    <div class="accordion-content">
+                        <p>You deposit funds into your own account, and we trade it via MAM/PAMM systems. You retain
+                            full control of your withdrawals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Get in <span class="highlight-text">Touch</span></h2>
+            <div class="glass-panel contact-card" data-aos="zoom-in">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <iconify-icon icon="solar:letter-bold-duotone" class="contact-icon"></iconify-icon>
+                        <h3>Email Support</h3>
+                        <p>support@bigjaymesfx.com</p>
+                        <a href="mailto:support@bigjaymesfx.com" class="btn btn-outline">Send Email</a>
+                    </div>
+                    <div class="contact-item">
+                        <iconify-icon icon="logos:telegram" class="contact-icon"></iconify-icon>
+                        <h3>Telegram Community</h3>
+                        <p>Join the conversation live.</p>
+                        <a href="#" class="btn btn-outline">Join Channel</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-ring-wrapper">
+                            <iconify-icon icon="solar:phone-calling-bold-duotone"
+                                class="contact-icon anim-ring"></iconify-icon>
+                        </div>
+                        <h3>Call Support</h3>
+                        <p>+15551234567</p>
+                        <a href="tel:+15551234567" class="btn btn-outline">Call Now</a>
+                    </div>
+                    <div class="contact-item">
+                        <iconify-icon icon="logos:whatsapp-icon" class="contact-icon"></iconify-icon>
+                        <h3>WhatsApp</h3>
+                        <p>Chat with us instantly.</p>
+                        <a href="https://chat.whatsapp.com/FK1sqzXtr6BDVjdCsj2xMU" class="btn btn-outline"
+                            target="_blank">Start Chat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">BIG JAMESFX</div>
+                <ul class="footer-links">
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="https://www.instagram.com/big_jaymesfx?igsh=eGJvYzJrbDJoZHNp&utm_source=qr"
+                        class="social-icon" aria-label="Instagram">
+                        <iconify-icon icon="ph:instagram-logo-fill"></iconify-icon>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Telegram">
+                        <iconify-icon icon="ph:telegram-logo-fill"></iconify-icon>
+                    </a>
+                    <a href="https://www.youtube.com/@kingj662" class="social-icon" aria-label="YouTube">
+                        <iconify-icon icon="ph:youtube-logo-fill"></iconify-icon>
+                    </a>
+                    <a href="https://chat.whatsapp.com/FK1sqzXtr6BDVjdCsj2xMU" class="social-icon"
+                        aria-label="WhatsApp">
+                        <iconify-icon icon="ph:whatsapp-logo-fill"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Big JaymesFX Forex. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

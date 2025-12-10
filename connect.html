@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to Deriv | Big James FX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body class="deriv-body">
+
+    <div class="deriv-split-screen">
+        <!-- Left Side: Visuals -->
+        <div class="deriv-visuals">
+            <div class="logo-wrapper logo-connect">
+                <a href="index.html" class="bj-logo-btn">BJ</a>
+                <div class="logo">BIG JAYMESFX</div>
+            </div>
+            <a href="index.html" class="back-link">
+                <iconify-icon icon="solar:arrow-left-linear"></iconify-icon> Back to Home
+            </a>
+
+            <div class="chart-canvas">
+                <!-- Simple animated SVG chart background -->
+                <svg viewBox="0 0 1000 600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                    <path d="M0,500 Q200,400 300,200 T600,300 T800,100 T1000,50" fill="none"
+                        stroke="rgba(202, 138, 4, 0.1)" stroke-width="2" />
+                    <path d="M0,600 Q150,550 400,400 T700,450 T900,200 T1200,100" fill="none"
+                        stroke="rgba(255, 255, 255, 0.05)" stroke-width="2" />
+                </svg>
+            </div>
+
+            <div class="floating-symbols">
+                <!-- Using iconify icons as floating elements -->
+                <iconify-icon icon="ph:currency-dollar-simple-bold" class="float-item"
+                    style="left: 20%; animation-delay: 0s;"></iconify-icon>
+                <iconify-icon icon="solar:graph-up-bold" class="float-item"
+                    style="left: 70%; animation-delay: 4s;"></iconify-icon>
+                <iconify-icon icon="ph:trend-up-bold" class="float-item"
+                    style="left: 40%; animation-delay: 8s; font-size: 3rem;"></iconify-icon>
+                <iconify-icon icon="ph:chart-bar-bold" class="float-item"
+                    style="left: 80%; animation-delay: 12s;"></iconify-icon>
+            </div>
+
+            <div class="visual-content-wrapper">
+                <h1 class="visual-title">Trade Without <br>Limits.</h1>
+                <p style="color: var(--text-secondary); max-width: 400px; margin: 0 auto; font-size: 1.1rem;">
+                    Institutional execution speeds. Raw spreads. The only broker trusted by Big James FX.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Side: Interaction Form -->
+        <div class="deriv-form-container">
+            <div class="form-card">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" onclick="switchAuthTab('login')">Log In</button>
+                    <button class="auth-tab" onclick="switchAuthTab('register')">Create Account</button>
+                </div>
+
+                <!-- Login View -->
+                <div id="login-view" class="auth-form-view active">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" class="styled-input" placeholder="enter your email">
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" class="styled-input" placeholder="••••••••">
+                    </div>
+                    <a href="https://deriv.partners/rx?sidc=C6EB5972-39C5-48EE-BC40-6FDE6465A593&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU163580"
+                        class="btn-deriv-pulse" target="_blank">
+                        Connect to Broker
+                    </a>
+                </div>
+
+                <!-- Register View -->
+                <div id="register-view" class="auth-form-view">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" class="styled-input" placeholder="e.g. John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" class="styled-input" placeholder="enter your email">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" class="styled-input" placeholder="+1 234 567 8900">
+                    </div>
+                    <div class="input-group">
+                        <label>Create Password</label>
+                        <input type="password" class="styled-input" placeholder="create a strong password">
+                    </div>
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <input type="password" class="styled-input" placeholder="repeat password">
+                    </div>
+                    <div class="input-group" style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                        <input type="checkbox" id="terms" style="margin-top: 4px;">
+                        <label for="terms" style="font-size: 0.8rem; display: inline; margin: 0;">
+                            I read and agree to the Terms and Conditions.
+                        </label>
+                    </div>
+                    <a href="https://deriv.partners/rx?sidc=C6EB5972-39C5-48EE-BC40-6FDE6465A593&utm_campaign=dynamicworks&utm_medium=affiliate&utm_source=CU163580"
+                        class="btn-deriv-pulse" target="_blank">
+                        Start Trading Now
+                    </a>
+                </div>
+
+                <div class="disclaimer-text">
+                    This will redirect you to the official Deriv secure portal. <br>
+                    Ensure 'Big James FX' is listed as your referrer for community access.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchAuthTab(type) {
+            const tabs = document.querySelectorAll('.auth-tab');
+            const views = document.querySelectorAll('.auth-form-view');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            views.forEach(view => view.classList.remove('active'));
+
+            if (type === 'login') {
+                tabs[0].classList.add('active');
+                document.getElementById('login-view').classList.add('active');
+            } else {
+                tabs[1].classList.add('active');
+                document.getElementById('register-view').classList.add('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
